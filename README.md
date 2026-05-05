@@ -1,5 +1,9 @@
-# mautrix-whatsapp
+# mautrix-whatsapp (no delete)
 A Matrix-WhatsApp puppeting bridge based on [whatsmeow](https://github.com/tulir/whatsmeow).
+
+This fork keeps WhatsApp-side message deletions from deleting the bridged Matrix
+event. When WhatsApp reports that a message was deleted, the bridge sends a
+reply message noting the deletion attempt instead.
 
 ## Documentation
 All setup and usage instructions are located on [docs.mau.fi]. Some quick links:
